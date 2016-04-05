@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Califications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Score</th>
+      <th>User</th>
+      <th>Location</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @califications.each do |calification| %>
+      <tr>
+        <td><%= calification.score %></td>
+        <td><%= calification.user_id %></td>
+        <td><%= calification.location_id %></td>
+        <td><%= calification.message %></td>
+        <td><%= link_to 'Show', calification %></td>
+        <td><%= link_to 'Edit', edit_calification_path(calification) %></td>
+        <td><%= link_to 'Destroy', calification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Calification', new_calification_path %>

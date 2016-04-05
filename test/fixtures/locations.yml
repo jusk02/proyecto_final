@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: MyString
+  name: MyString
+  address: MyString
+  description: MyText
+  type: 
+  avg_score: 1.5
+  phone: MyString
+  photos: MyString
+
+two:
+  city: MyString
+  name: MyString
+  address: MyString
+  description: MyText
+  type: 
+  avg_score: 1.5
+  phone: MyString
+  photos: MyString

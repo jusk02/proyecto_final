@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @calification.score %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @calification.user_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @calification.location_id %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @calification.message %>
+</p>
+
+<%= link_to 'Edit', edit_calification_path(@calification) %> |
+<%= link_to 'Back', califications_path %>
