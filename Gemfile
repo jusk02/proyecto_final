@@ -23,6 +23,21 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+#devise para login
+gem 'devise', '~> 3.2'
+
+#cancancan para permisos segun tipo de usuario
+gem 'cancancan', '~> 1.10'
+
+#carrierwave para subida de archivos
+gem 'carrierwave'
+
+#active admin para control del web master
+gem 'activeadmin', '~> 1.0.0.pre2'
+
+#listado de ciudades y paises
+gem 'city-state'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
