@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   
 
-  devise_for :businesses
-  devise_for :users
+  devise_for :businesses, controllers: {sessions: 'sessions_business', registrations: 'registrations_business'}
+  devise_for :users, controllers: {sessions: 'sessions', registrations: 'registrations'}
   resources :califications
   resources :comments
   resources :locations

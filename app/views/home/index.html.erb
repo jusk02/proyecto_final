@@ -39,8 +39,52 @@
         </div><!-- /.container -->
     </nav>
 
+    <section>
+    	<p>llena</p> <br><br>
+    </section>
+
 	<!-- Header -->
-	
+	<div class="panel">
+	<p>User</p>
+	<%= form_for(User.new, as: :user, url: session_path(:user)) do |f| %>
+		<div class="alert alert-danger errors" style="display: none"></div>
+		<div class="form-group">
+		    <%= f.label :email %><br />
+		    <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+		</div>
+
+		<div class="form-group">
+		    <%= f.label :password %><br />
+		    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+		</div>
+
+		<div class="form-group">
+		    <%= f.submit "Log in", class: "btn btn-success btn-lg" %>
+	  	</div>
+	<% end %>
+	</div>
+
+	<div class="panel-b">
+	<p>Business</p>
+	<%= form_for(Business.new, as: :business, url: session_path(:business)) do |f| %>
+		<div class="alert alert-danger errors" style="display: none"></div>
+		<div class="form-group">
+		    <%= f.label :email %><br />
+		    <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+		</div>
+
+		<div class="form-group">
+		    <%= f.label :password %><br />
+		    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+		</div>
+
+		<div class="form-group">
+		    <%= f.submit "Log in", class: "btn btn-success btn-lg" %>
+	  	</div>
+	<% end %>
+	</div>
+
+
 
     <header>
 		<div class="jumbotron text-center">

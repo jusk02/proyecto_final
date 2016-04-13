@@ -7,8 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<a href="#" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Login</a>
 
 <%= yield %>
-
+<%= render partial: 'partials/login_modal' %>
 </body>
 </html>
