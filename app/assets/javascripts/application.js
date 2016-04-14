@@ -16,4 +16,5 @@
 //= require turbolinks
 //= require sessions
 //= require sessions_business
+//= require patients
 
